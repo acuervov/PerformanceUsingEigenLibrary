@@ -27,7 +27,7 @@ void Matrixmaker()
   int N=4;
   double time=0;
   
-  for (int ii=0;ii<5;ii++){
+  for (int ii=0;ii<7;ii++){
     
   Matriz a=Eigen::MatrixXd::Random (N,N);
   std::cout << a.rows()<<std::endl;
@@ -56,9 +56,11 @@ void Matrixsolver (Matriz a,double & time)
     
   time =elapsed_seconds.count();
   
-  std::cout<<"Valores propios: "<<std::endl<<aV.eigenvectors().col(0)<<std::endl
+  std::cout<<"Valores propios: "<<std::endl;
+  std::cout<<aV.eigenvectors().col(0)<<std::endl;
 
-  std::cout<< "Vectores propios "<<std::endl<<av<<std::endl;  std::cout <<" "<<std::endl;
+  std::cout<< "Vectores propios "<<std::endl;
+  std::cout<<av<<std::endl;  std::cout <<" "<<std::endl;
 
   
 }
