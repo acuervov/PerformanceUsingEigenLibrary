@@ -27,7 +27,7 @@ void Matrixmaker()
   int N=4;
   double time=0;
   
-  for (int ii=0;ii<7;ii++){
+  for (int ii=0;ii<10;ii++){
     
   Matriz a=Eigen::MatrixXd::Random (N,N);
   std::cout << a.rows()<<std::endl;
